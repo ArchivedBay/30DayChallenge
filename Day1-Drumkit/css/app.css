@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+body, .drumKey h1, .drumKey .description{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../images/alternative.jpg);
+    background-position: 0px -100px;
+    height: 100%;
+    color: #fff;
+    font-family: 'Lily Script One', cursive;
+}
+
+/* CONTAINER STYLES */
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* MAIN KEY STYLES */
+.drumKey{
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    background-color: rgba(20,20,20,0.6);
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    transition: border 0.2s ease;
+}
+.drumKey h1 {font-family: 'Elsie', cursive;}
+.drumKey .description{
+    color: #e0b842;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+
+/* FOOTER STYLES */
+.info{
+    width: 250px;
+    text-align: center;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-125px, 0);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+}
+footer .heart{
+   color: #e0b842;
+   margin: 0 5px 0 5px;
+}
+
+
+/* EFFECT STYLES */
+.drumKey:hover{
+    border: 2px solid rgba(224, 184, 66, 0.4);
+    transition: border 0.2s ease;
+}
+/* APPLY THIS ON KEYDOWN. */
+.drumKeyPressed{
+    border: 3px solid #e0b842;
+    padding: 12px;
+}
