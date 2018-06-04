@@ -6,7 +6,7 @@ body, .drumKey h1, .drumKey .description{
     padding: 0;
 }
 body{
-    background-image: url(../images/alternative.jpg);
+    background-image: url(./alternative.jpg);
     background-position: 0px -100px;
     height: 100%;
     color: #fff;
